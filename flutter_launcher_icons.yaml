@@ -1,0 +1,16 @@
+# flutter pub run flutter_launcher_icons
+flutter_launcher_icons:
+  image_path: "assets/logos/optimized/raster/logo-colored-1024.png"
+
+  # Andriod Icon Configuration
+  android: true
+  adaptive_icon_background: "#f05537"
+  adaptive_icon_foreground: "assets/logos/optimized/raster/logo-colored-1024.png"
+  adaptive_icon_monochrome: "assets/logos/optimized/raster/logo-monochrome-1024.png"
+
+  # iOS Icon Configuration
+  ios: true
+  remove_alpha_ios: true
+  image_path_ios_dark_transparent: "assets/logos/optimized/raster/logo-colored-1024.png"
+  desaturate_tinted_to_grayscale_ios: true
+  background_color_ios: "#f05537"
