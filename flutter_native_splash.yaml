@@ -1,0 +1,9 @@
+flutter_native_splash:
+  web: false
+  color: "#f05537"
+  image: "assets/logos/optimized/raster/logo-white-1024.png"
+  fullscreen: true
+
+  android_12:
+    color: "#f05537"
+    image: "assets/logos/optimized/raster/logo-white-1024.png"
