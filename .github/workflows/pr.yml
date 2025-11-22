@@ -2,11 +2,11 @@ name: PR Checks and Code Quality
 
 on:
     pull_request:
-        branches: ['main']
+        branches: ["main"]
 
 jobs:
-    setup-and-install-dependencies:
-        name: Setup and install dependencies
+    test-and-analyze:
+        name: Test and analyze code
         runs-on: ubuntu-latest
 
         steps:
@@ -22,20 +22,8 @@ jobs:
             - name: Install dependencies
               run: flutter pub get
 
-    code-quality-check:
-        name: Check code quality
-        runs-on: ubuntu-latest
-        needs: setup-and-install-dependencies
-
-        steps:
             - name: Run flutter analyze
               run: flutter analyze
 
-    run-tests:
-        name: Run tests
-        runs-on: ubuntu-latest
-        needs: setup-and-install-dependencies
-
-        steps:
             - name: Run flutter test
               run: flutter test
