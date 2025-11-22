@@ -2,7 +2,7 @@ name: PR Checks and Code Quality
 
 on:
     pull_request:
-        branches: [$default-branch]
+        branches: ['main']
 
 jobs:
     setup-and-install-dependencies:
